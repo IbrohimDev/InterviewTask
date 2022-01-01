@@ -27,6 +27,7 @@ class MainScreen :Fragment(R.layout.screen_main){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) = binding.scope {
 
         println("Testing second commit")
+        println("Remote second commit")
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         generateButton.setOnClickListener {
             viewModel.generateMap(textHeightCount.toInt(), textWidthCount.toInt())
