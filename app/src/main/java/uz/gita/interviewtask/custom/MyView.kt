@@ -69,10 +69,10 @@ class MyView @JvmOverloads constructor(
     fun setSelectRectPosition(block: (Int, Int) -> Unit) {
         selectRectPosition = block
     }
-
     fun updateMap(map: Array<Array<Int>>) {
         this.map = map
         invalidate()
     }
+
 
 }
