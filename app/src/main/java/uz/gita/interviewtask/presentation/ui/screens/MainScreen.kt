@@ -26,6 +26,7 @@ class MainScreen :Fragment(R.layout.screen_main){
     private val viewModel: MainViewModel by viewModels<MainViewModelImpl>()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) = binding.scope {
 
+        println("remote first commit")
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         generateButton.setOnClickListener {
             viewModel.generateMap(textHeightCount.toInt(), textWidthCount.toInt())
